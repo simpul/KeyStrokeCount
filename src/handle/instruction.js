@@ -7,8 +7,8 @@ const notice = clc.blue;
 
 module.exports = {
   welcome() {
-    const logo = figlet.textSync('KeyStrokeCount', {
-      font: 'ANSI Shadow',
+    const logo = figlet.textSync('KeyStroke', {
+      font: '3D-ASCII',
       horizontalLayout: 'default',
       verticalLayout: 'default'
     })

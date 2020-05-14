@@ -12,6 +12,15 @@ fetch(`${location.href}histogramData`)
       valueArr.push(v.value)
     })
     const option = {
+      title: {
+          text: 'Total Key Stroke'
+      },
+      tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+              type: 'shadow'
+          }
+      },
       grid: {
           left: '3%',
           right: '4%',
@@ -19,9 +28,7 @@ fetch(`${location.href}histogramData`)
           containLabel: true
       },
       xAxis: {
-          type: 'value',
-          // boundaryGap: [0, 0.01],
-          interval: 1
+          type: 'value'
       },
       yAxis: {
           type: 'category',
